@@ -1,0 +1,53 @@
+From 918025c44727a050782fb91df92925f0cb08dd60 Mon Sep 17 00:00:00 2001
+From: Jari Aalto <jari.aalto@cante.net>
+Date: Sat, 31 Jan 2009 21:12:42 +0200
+Subject: [PATCH] tigrc.5.txt: asciidoc fix
+
+Signed-off-by: Jari Aalto <jari.aalto@cante.net>
+---
+ tigrc.5.txt |    8 ++++----
+ 1 files changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/tigrc.5.txt b/tigrc.5.txt
+index 02af7fa..280d296 100644
+--- a/tigrc.5.txt
++++ b/tigrc.5.txt
+@@ -8,7 +8,7 @@ tigrc - tig user configuration file
+ 
+ SYNOPSIS
+ --------
+-[verse]
++
+ .............................................................................
+ *set*   'variable' *=* 'value'
+ *bind*  'keymap' 'key' 'action'
+@@ -34,7 +34,7 @@ Set command
+ A few selective variables can be configured via the set command. The syntax
+ is:
+ 
+-[verse]
++
+ ..............................................................................
+ *set* variables *=* value
+ ..............................................................................
+@@ -113,7 +113,7 @@ Bind command
+ Using bind commands keys can be mapped to an action when pressed in a given
+ key map. The syntax is:
+ 
+-[verse]
++
+ ..............................................................................
+ *bind* 'keymap' 'key' 'action'
+ ..............................................................................
+@@ -298,7 +298,7 @@ terminal supports color, these commands can be used to assign foreground and
+ background combinations to certain areas. Optionally, an attribute can be
+ given as the last parameter. The syntax is:
+ 
+-[verse]
++
+ ..............................................................................
+ *color* 'area' 'fgcolor' 'bgcolor' '[attributes]'
+ ..............................................................................
+-- 
+1.6.0.4
+
