@@ -1,3 +1,2 @@
-# Copyright (C) 2007 Jari Aalto; Licenced under GPL v2 or later
 tag1: tig
-  http://packages.debian.org/sid/tig pregexp:orig.tar.gz file:orig new: x:
+  http://packages.debian.org/unstable/tig pregexp:orig.tar.gz file:orig new: x:
