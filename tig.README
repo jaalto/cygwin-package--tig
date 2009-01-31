@@ -1,0 +1,87 @@
+tig
+------------------------------------------
+
+Curses based git repository browser
+
+A command line repository browser capable of displaying a summerized
+revision log and showing commit log messages, diffstats and diffs. Progam
+may also be used as a pager. It reads input from stdin and colorizes it.
+
+Runtime requirements:
+  cygwin
+  git
+  libiconv2
+  libncurses-devel
+
+Build requirements:
+  cygwin
+  asciidoc
+  libiconv2
+  libncurses-devel
+  xmlto
+
+Canonical homepage:
+  http://packages.debian.org/tig
+  http://jonas.nitro.dk/tig
+
+Canonical download:
+  See above
+
+Version control repository:
+  http://jonas.nitro.dk/tig/tig.git
+
+Mailing list:
+
+Forum / Wiki:
+
+IRC channel:
+
+Upstream contact:
+  Author: Jonas Fonseca <fonseca@diku.dk>
+  Bugs: Jonas Fonseca <fonseca@diku.dk>
+
+License:
+  GPL
+
+Language:
+  C
+
+------------------------------------
+
+Build instructions:
+  unpack tig-0.9.1-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+    unpacked under /usr/src automatically
+  cd /usr/src
+  ./tig*.sh all
+
+This will create:
+  tig-0.9.1-1.tar.bz2
+  tig-0.9.1-1-src.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary distribution:
+
+usr/bin/tig.exe
+usr/share/doc/Cygwin/tig-0.9.1.README
+usr/share/doc/tig-0.9.1/BUGS
+usr/share/doc/tig-0.9.1/COPYING
+usr/share/doc/tig-0.9.1/INSTALL
+usr/share/doc/tig-0.9.1/README
+usr/share/doc/tig-0.9.1/SITES
+usr/share/doc/tig-0.9.1/TODO
+usr/share/doc/tig-0.9.1/VERSION
+usr/share/doc/tig-0.9.1/manual.txt
+usr/share/man/man1/tig.1.gz
+usr/share/man/man5/tigrc.5.gz
+
+------------------
+
+Port Notes:
+
+----- version 0.9.1-1 -----
+- Initial release 2007-10-18 Jari Aalto
+
+Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
+Copyright (C) 2007 Jari Aalto; Licenced under GPL v2 or later

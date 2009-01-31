@@ -1,0 +1,59 @@
+From 010b0c8b048f253139d3d6508beaa8ab12d92f4b Mon Sep 17 00:00:00 2001
+From: Jari Aalto <jari.aalto@cante.net>
+Date: Thu, 18 Oct 2007 21:35:12 +0300
+Subject: [PATCH] Makefile: add ASCIIDOC_FLAGS
+
+Signed-off-by: Jari Aalto <jari.aalto@cante.net>
+---
+ Makefile |   14 +++++++-------
+ 1 files changed, 7 insertions(+), 7 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index c8580bf..1801bb5 100644
+--- a/Makefile
++++ b/Makefile
+@@ -153,34 +153,34 @@ manual.toc: manual.txt
+ 		esac; done | sed 's/\[\[\(.*\)\]\]/\1/' > $@
+ 
+ README.html: README
+-	$(ASCIIDOC) -b xhtml11 -d article -a readme $<
++	$(ASCIIDOC) $(ASCIIDOC_FLAGS) -b xhtml11 -d article -a readme $<
+ 
+ %.pdf : %.xml
+ 	$(DOCBOOK2PDF) $<
+ 
+ %.1.html : %.1.txt
+-	$(ASCIIDOC) -b xhtml11 -d manpage $<
++	$(ASCIIDOC) $(ASCIIDOC_FLAGS) -b xhtml11 -d manpage $<
+ 
+ %.1.xml : %.1.txt
+-	$(ASCIIDOC) -b docbook -d manpage -aversion=$(VERSION) $<
++	$(ASCIIDOC) $(ASCIIDOC_FLAGS) -b docbook -d manpage -aversion=$(VERSION) $<
+ 
+ %.1 : %.1.xml
+ 	$(XMLTO) -m manpage.xsl man $<
+ 
+ %.5.html : %.5.txt
+-	$(ASCIIDOC) -b xhtml11 -d manpage $<
++	$(ASCIIDOC) $(ASCIIDOC_FLAGS) -b xhtml11 -d manpage $<
+ 
+ %.5.xml : %.5.txt
+-	$(ASCIIDOC) -b docbook -d manpage -aversion=$(VERSION) $<
++	$(ASCIIDOC) $(ASCIIDOC_FLAGS) -b docbook -d manpage -aversion=$(VERSION) $<
+ 
+ %.5 : %.5.xml
+ 	$(XMLTO) -m manpage.xsl man $<
+ 
+ %.html : %.txt
+-	$(ASCIIDOC) -b xhtml11 -d article -n $<
++	$(ASCIIDOC) $(ASCIIDOC_FLAGS) -b xhtml11 -d article -n $<
+ 
+ %.xml : %.txt
+-	$(ASCIIDOC) -b docbook -d article $<
++	$(ASCIIDOC) $(ASCIIDOC_FLAGS) -b docbook -d article $<
+ 
+ %.html-chunked : %.xml
+ 	$(XMLTO) html -o $@ $<
+-- 
+1.5.3.2.81.g17ed
+
