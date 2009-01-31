@@ -50,39 +50,30 @@ Language:
 ------------------------------------
 
 Build instructions:
-  unpack tig-0.9.1-1-src.tar.bz2
+  unpack tig-0.13-1-src.tar.bz2
     if you use setup to install this src package, it will be
     unpacked under /usr/src automatically
   cd /usr/src
   ./tig*.sh all
 
 This will create:
-  tig-0.9.1-1.tar.bz2
-  tig-0.9.1-1-src.tar.bz2
+  tig-0.13-1.tar.bz2
+  tig-0.13-1-src.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary distribution:
-
-usr/bin/tig.exe
-usr/share/doc/Cygwin/tig-0.9.1.README
-usr/share/doc/tig-0.9.1/BUGS
-usr/share/doc/tig-0.9.1/COPYING
-usr/share/doc/tig-0.9.1/INSTALL
-usr/share/doc/tig-0.9.1/README
-usr/share/doc/tig-0.9.1/SITES
-usr/share/doc/tig-0.9.1/TODO
-usr/share/doc/tig-0.9.1/VERSION
-usr/share/doc/tig-0.9.1/manual.txt
-usr/share/man/man1/tig.1.gz
-usr/share/man/man5/tigrc.5.gz
+  See Cygwin package archive
 
 ------------------
 
 Port Notes:
 
+----- version 0.13-1 -----
+- New upstream release 2009-01-31 Jari Aalto
+
 ----- version 0.9.1-1 -----
 - Initial release 2007-10-18 Jari Aalto
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
-Copyright (C) 2007 Jari Aalto; Licenced under GPL v2 or later
+Copyright (C) 2007-2009 Jari Aalto; Licenced under GPL v2 or later
