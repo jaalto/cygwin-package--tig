@@ -50,15 +50,15 @@ Language:
 ------------------------------------
 
 Build instructions:
-  unpack tig-0.13-1-src.tar.bz2
+  unpack tig-0.13-2-src.tar.bz2
     if you use setup to install this src package, it will be
     unpacked under /usr/src automatically
   cd /usr/src
   ./tig*.sh all
 
 This will create:
-  tig-0.13-1.tar.bz2
-  tig-0.13-1-src.tar.bz2
+  tig-0.13-2.tar.bz2
+  tig-0.13-2-src.tar.bz2
 
 -------------------------------------------
 
@@ -68,6 +68,10 @@ Files included in the binary distribution:
 ------------------
 
 Port Notes:
+
+----- version 0.13-2 -----
+- New upstream release 2009-02-03 Jari Aalto
+- Include debian/patches, like memory corruption fix.
 
 ----- version 0.13-1 -----
 - New upstream release 2009-01-31 Jari Aalto
