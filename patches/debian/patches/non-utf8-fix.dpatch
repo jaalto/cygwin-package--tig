@@ -1,0 +1,26 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## non-utf8-fix.dpatch by Jonas Fonseca <fonseca@diku.dk>
+##
+## DP: Fix regression in handling of data for non-UTF-8 locales
+## DP:
+## DP: The bug was introduced in 65498141015b6070cf5c9b5704039389dba76e90 where
+## DP: the the IO API was changed from using stdio to 'raw' file descriptors.
+## DP: Part of the change removed the need for cutting the ending newline from
+## DP: the input line in update_view(). This caused the resulting iconv output
+## DP: buffer to not be NUL terminated since the input string no longer
+## DP: contained an ending NULL byte.
+## DP:
+## DP: Reported by Pavel Roskin.
+
+diff a/tig.c b/tig.c
+--- a/tig.c
++++ b/tig.c
+@@ -2707,7 +2707,7 @@ update_view(struct view *view)
+ 
+ 		if (opt_iconv != ICONV_NONE) {
+ 			ICONV_CONST char *inbuf = line;
+-			size_t inlen = linelen;
++			size_t inlen = linelen + 1;
+ 
+ 			char *outbuf = out_buffer;
+ 			size_t outlen = sizeof(out_buffer);
