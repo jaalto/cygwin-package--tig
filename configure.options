@@ -1,4 +1,5 @@
 # When ./confgure is being run, options listed here are appended
 # after default Cygwin option set.
 
---disable-nls
+# 2009-01-03 This option no longer exists in 0.13
+# --disable-nls
