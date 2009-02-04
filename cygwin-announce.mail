@@ -19,6 +19,13 @@ CHANGES SINCE LAST RELEASE
 
 See changes listing at http://repo.or.cz/w/tig.git
 
+This update contains Debian patches from http://packages.debian.org/tig:
+
+- tigrc-parsing-fix.dpatch
+- mem-corruption-fix.dpatch
+- non-utf8-fix.dpatch
+
+
 INSTALL OR UPGRADE NOTES
 ========================
 
