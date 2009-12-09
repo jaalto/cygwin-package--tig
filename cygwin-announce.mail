@@ -1,7 +1,6 @@
 -- Copyright (C) 2007-2009 Jari Aalto; Licenced under GPL v2 or later
-
 To: cygwin-announce@cygwin.com
-Subject: Updated: tig 0.13-2 -- Curses based git repository browser
+Subject: Updated: tig 0.15-1 -- Curses based git repository browser
 
 PACKAGE DESCRIPTION
 ===================
@@ -9,8 +8,8 @@ PACKAGE DESCRIPTION
 Homepage: http://jonas.nitro.dk/tig
 License : GPL-2
 
-A command line repository browser capable of displaying a summerized
-revision log and showing commit log messages, diffstats and diffs. Progam
+A command line repository browser capable of displaying a summarized
+revision log and showing commit log messages, diffstats and diffs. Program
 may also be used as a pager. It reads input from stdin and colorizes it.
 
 
@@ -18,13 +17,6 @@ CHANGES SINCE LAST RELEASE
 ==========================
 
 See changes listing at http://repo.or.cz/w/tig.git
-
-This update contains Debian patches from http://packages.debian.org/tig:
-
-- tigrc-parsing-fix.dpatch
-- mem-corruption-fix.dpatch
-- non-utf8-fix.dpatch
-
 
 INSTALL OR UPGRADE NOTES
 ========================
