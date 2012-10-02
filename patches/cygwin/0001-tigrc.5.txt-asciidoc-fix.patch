@@ -19,30 +19,30 @@ Signed-off-by: Jari Aalto <jari.aalto@cante.net>
  *set*   'variable' *=* 'value'
  *bind*  'keymap' 'key' 'action'
  *color* 'area' 'fgcolor' 'bgcolor' '[attributes]'
-@@ -33,7 +33,7 @@ Alternatively to using `~/.tigrc`, tig o
- one of the git configuration files, which are read by tig on startup. See
- 'git-config(1)' for which files to use. The following example show the basic
- syntax to use for settings, bindings and colors.
--[verse]
-+
- --------------------------------------------------------------------------
- [tig] show-rev-graph = true
- [tig "color"] cursor = yellow red bold 
-@@ -112,7 +112,7 @@ Valid bool values::
- Valid int values::
+@@ -74,7 +74,7 @@ Set command
+ A few selective variables can be configured via the set command. The syntax
+ is:
  
- 	A non-negative integer.
 -[verse]
 +
- Valid string values::
+ *set* variables *=* value
  
- 	A string of characters. Optionally, use either ' or " as delimiters.
-@@ -298,7 +298,7 @@ Or in the git configuration files:
- 	# Cherry-pick current commit onto current branch
- 	generic = C !git cherry-pick %(commit)
- --------------------------------------------------------------------------
+ Examples:
+@@ -272,7 +272,7 @@ Bind command
+ Using bind commands keys can be mapped to an action when pressed in a given
+ key map. The syntax is:
+ 
 -[verse]
 +
- Keys are mapped by first searching the keybindings for the current view, then
- the keybindings for the *generic* keymap, and last the default keybindings.
- Thus, the view keybindings shadow the generic keybindings which Shadow the
+ *bind* 'keymap' 'key' 'action'
+ 
+ Examples:
+@@ -498,7 +498,7 @@ terminal supports color, these commands
+ background combinations to certain areas. Optionally, an attribute can be
+ given as the last parameter. The syntax is:
+ 
+-[verse]
++
+ *color* 'area' 'fgcolor' 'bgcolor' '[attributes]'
+ 
+ Examples:
