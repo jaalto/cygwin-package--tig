@@ -1,6 +1,6 @@
--- Copyright (C) 2007-2009 Jari Aalto; Licenced under GPL v2 or later
+-- Copyright (C) 2007-2012 Jari Aalto; Licenced under GPL v2 or later
 To: cygwin-announce@cygwin.com
-Subject: Updated: tig 0.15-1 -- Curses based git repository browser
+Subject: Updated: tig 1.0+20121001+git690c03d-1 -- Curses based git repository browser
 
 PACKAGE DESCRIPTION
 ===================
@@ -16,7 +16,7 @@ may also be used as a pager. It reads input from stdin and colorizes it.
 CHANGES SINCE LAST RELEASE
 ==========================
 
-See changes listing at http://repo.or.cz/w/tig.git
+See chnage log at https://github.com/jonas/tig
 
 INSTALL OR UPGRADE NOTES
 ========================
@@ -32,11 +32,11 @@ system. Then, run setup and answer all of the questions. You'll find
 the package listed in the "All" category. After installation, read the
 documentation at directories:
 
-    /usr/share/doc/<package-version>/*
+    /usr/share/doc/<package>/*
     /usr/share/doc/Cygwin/<package-version>.README
 
 If you have questions or comments, please send them to the Cygwin
-mailing list at <cygwin@cygwin.com>.
+mailing list at <cygwin(at)cygwin.com>.
 
 CYGWIN-ANNOUNCE UNSUBSCRIBE INFO
 ================================
@@ -47,7 +47,7 @@ If you want to unsubscribe from the mailing list, look at the
 "List-Unsubscribe: " tag in the email header of this message. Send
 email to the address specified there. It will be in the format:
 
-    cygwin-announce-unsubscribe-you=yourdomain.com@cygwin.com
+    cygwin-announce-unsubscribe-you=yourdomain.com(at)cygwin.com
 
 More information on unsubscribing can be found:
 

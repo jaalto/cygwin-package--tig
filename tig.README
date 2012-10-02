@@ -16,11 +16,12 @@ Build requirements:
   asciidoc
   libiconv2
   libncurses-devel
+  quilt
   xmlto
 
 Canonical homepage:
-  http://packages.debian.org/tig
   http://jonas.nitro.dk/tig
+  http://packages.debian.org/tig
 
 Canonical download:
   See above
@@ -36,7 +37,7 @@ IRC channel:
 
 Upstream contact:
   Author: Jonas Fonseca <fonseca@diku.dk>
-  Bugs: Jonas Fonseca <fonseca@diku.dk>
+  Bugs: https://github.com/jonas/tig/issues
 
 License:
   GPL
@@ -47,15 +48,15 @@ Language:
 ------------------------------------
 
 Build instructions:
-  unpack tig-0.15-1-src.tar.bz2
+  unpack tig-1.0+20121001+git690c03d-1-src.tar.bz2
     if you use setup to install this src package, it will be
     unpacked under /usr/src automatically
   cd /usr/src
   ./tig*.sh all
 
 This will create:
-  tig-0.15-1.tar.bz2
-  tig-0.15-1-src.tar.bz2
+  tig-1.0+20121001+git690c03d-1.tar.bz2
+  tig-1.0+20121001+git690c03d-1-src.tar.bz2
 
 -------------------------------------------
 
@@ -65,6 +66,9 @@ Files included in the binary distribution:
 ------------------
 
 Port Notes:
+
+----- version 1.0+20121001+git690c03d-1 -----
+- New upstream release 2012-10-02 Jari Aalto
 
 ----- version 0.15-2 -----
 - tig.README and setup.hint grammar fixes.
@@ -83,4 +87,4 @@ Port Notes:
 - Initial release 2007-10-18 Jari Aalto
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
-Copyright (C) 2007-2009 Jari Aalto; Licenced under GPL v2 or later
+Copyright (C) 2007-2012 Jari Aalto; Licenced under GPL v2 or later
