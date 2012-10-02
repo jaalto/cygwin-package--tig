@@ -6,48 +6,43 @@ Subject: [PATCH] tigrc.5.txt: asciidoc fix
 Signed-off-by: Jari Aalto <jari.aalto@cante.net>
 ---
  tigrc.5.txt |    8 ++++----
- 1 files changed, 4 insertions(+), 4 deletions(-)
+ 1 file changed, 4 insertions(+), 4 deletions(-)
 
-diff --git a/tigrc.5.txt b/tigrc.5.txt
-index 02af7fa..280d296 100644
 --- a/tigrc.5.txt
 +++ b/tigrc.5.txt
-@@ -8,7 +8,7 @@ tigrc - tig user configuration file
+@@ -8,7 +8,7 @@ tigrc - tig configuration file
  
  SYNOPSIS
  --------
 -[verse]
 +
- .............................................................................
  *set*   'variable' *=* 'value'
  *bind*  'keymap' 'key' 'action'
-@@ -34,7 +34,7 @@ Set command
- A few selective variables can be configured via the set command. The syntax
- is:
- 
--[verse]
-+
- ..............................................................................
- *set* variables *=* value
- ..............................................................................
-@@ -113,7 +113,7 @@ Bind command
- Using bind commands keys can be mapped to an action when pressed in a given
- key map. The syntax is:
- 
--[verse]
-+
- ..............................................................................
- *bind* 'keymap' 'key' 'action'
- ..............................................................................
-@@ -298,7 +298,7 @@ terminal supports color, these commands can be used to assign foreground and
- background combinations to certain areas. Optionally, an attribute can be
- given as the last parameter. The syntax is:
- 
--[verse]
-+
- ..............................................................................
  *color* 'area' 'fgcolor' 'bgcolor' '[attributes]'
- ..............................................................................
--- 
-1.6.0.4
-
+@@ -33,7 +33,7 @@ Alternatively to using `~/.tigrc`, tig o
+ one of the git configuration files, which are read by tig on startup. See
+ 'git-config(1)' for which files to use. The following example show the basic
+ syntax to use for settings, bindings and colors.
+-[verse]
++
+ --------------------------------------------------------------------------
+ [tig] show-rev-graph = true
+ [tig "color"] cursor = yellow red bold 
+@@ -112,7 +112,7 @@ Valid bool values::
+ Valid int values::
+ 
+ 	A non-negative integer.
+-[verse]
++
+ Valid string values::
+ 
+ 	A string of characters. Optionally, use either ' or " as delimiters.
+@@ -298,7 +298,7 @@ Or in the git configuration files:
+ 	# Cherry-pick current commit onto current branch
+ 	generic = C !git cherry-pick %(commit)
+ --------------------------------------------------------------------------
+-[verse]
++
+ Keys are mapped by first searching the keybindings for the current view, then
+ the keybindings for the *generic* keymap, and last the default keybindings.
+ Thus, the view keybindings shadow the generic keybindings which Shadow the

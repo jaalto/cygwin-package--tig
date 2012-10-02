@@ -6,13 +6,11 @@ Subject: [PATCH] Makefile: Cygwin compile
 Signed-off-by: Jari Aalto <jari.aalto@cante.net>
 ---
  Makefile |    6 +++++-
- 1 files changed, 5 insertions(+), 1 deletions(-)
+ 1 file changed, 5 insertions(+), 1 deletion(-)
 
-diff --git a/Makefile b/Makefile
-index 1107f95..8511bcb 100644
 --- a/Makefile
 +++ b/Makefile
-@@ -32,7 +32,11 @@ RPM_VERLIST = $(filter-out g% dirty,$(subst -, ,$(VERSION))) 0
+@@ -36,7 +36,11 @@ RPM_VERLIST = $(filter-out g% dirty,$(su
  RPM_VERSION = $(word 1,$(RPM_VERLIST))
  RPM_RELEASE = $(word 2,$(RPM_VERLIST))$(if $(WTDIRTY),.dirty)
  
@@ -23,8 +21,5 @@ index 1107f95..8511bcb 100644
 +
 +LDLIBS ?= -lcurses $(CYGWIN_LIBS)
  CFLAGS ?= -Wall -O2
- DFLAGS	= -g -DDEBUG -Werror
+ DFLAGS	= -g -DDEBUG -Werror -O0
  PROGS	= tig
--- 
-1.6.0.4
-
