@@ -8,13 +8,11 @@ revision log and showing commit log messages, diffstats and diffs. Program
 may also be used as a pager. It reads input from stdin and colorizes it.
 
 Runtime requirements:
-  cygwin
   git
   libiconv2
   libncurses-devel
 
 Build requirements:
-  cygwin
   asciidoc
   libiconv2
   libncurses-devel
@@ -28,8 +26,7 @@ Canonical download:
   See above
 
 Version control repository:
-  http://repo.or.cz/w/tig.git
-  git://repo.or.cz/tig.git
+  git://github.com/jonas/tig.git
 
 Mailing list:
 
