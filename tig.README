@@ -10,12 +10,12 @@ may also be used as a pager. It reads input from stdin and colorizes it.
 Runtime requirements:
   git
   libiconv2
-  libncurses-devel
+  libncursesw10
 
 Build requirements:
   asciidoc
   libiconv2
-  libncurses-devel
+  libncursesw-devel
   quilt
   xmlto
 
