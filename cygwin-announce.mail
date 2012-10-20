@@ -1,6 +1,6 @@
--- Copyright (C) 2007-2012 Jari Aalto; Licenced under GPL v2 or later
 To: cygwin-announce@cygwin.com
 Subject: Updated: tig 1.0+20121001+git690c03d-1 -- Curses based git repository browser
+--text follows this line--
 
 PACKAGE DESCRIPTION
 ===================
@@ -12,11 +12,10 @@ A command line repository browser capable of displaying a summarized
 revision log and showing commit log messages, diffstats and diffs. Program
 may also be used as a pager. It reads input from stdin and colorizes it.
 
-
 CHANGES SINCE LAST RELEASE
 ==========================
 
-See chnage log at https://github.com/jonas/tig
+See changes at https://github.com/jonas/tig
 
 INSTALL OR UPGRADE NOTES
 ========================
