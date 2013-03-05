@@ -48,15 +48,15 @@ Language:
 ------------------------------------
 
 Build instructions:
-  unpack tig-1.0+20121001+git690c03d-1-src.tar.bz2
+  unpack tig-1.1+20130305+git91fc97d-1-src.tar.bz2
     if you use setup to install this src package, it will be
     unpacked under /usr/src automatically
   cd /usr/src
   ./tig*.sh all
 
 This will create:
-  tig-1.0+20121001+git690c03d-1.tar.bz2
-  tig-1.0+20121001+git690c03d-1-src.tar.bz2
+  tig-1.1+20130305+git91fc97d-1.tar.bz2
+  tig-1.1+20130305+git91fc97d-1-src.tar.bz2
 
 -------------------------------------------
 
@@ -66,6 +66,9 @@ Files included in the binary distribution:
 ------------------
 
 Port Notes:
+
+----- version 1.1+20130305+git91fc97d-1 -----
+- New upstream release 2013-03-05 Jari Aalto
 
 ----- version 1.0+20121001+git690c03d-1 -----
 - New upstream release 2012-10-02 Jari Aalto
@@ -87,4 +90,4 @@ Port Notes:
 - Initial release 2007-10-18 Jari Aalto
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
-Copyright (C) 2007-2012 Jari Aalto; Licenced under GPL v2 or later
+Copyright (C) 2007-2013 Jari Aalto; Licenced under GPL v2 or later
