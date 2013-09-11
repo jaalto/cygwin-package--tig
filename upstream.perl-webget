@@ -1,2 +1,2 @@
 tag1: tig
-  http://packages.debian.org/unstable/tig pregexp:orig.tar.gz file:tig_0.16.orig.tar.gz new: x:
+  http://packages.debian.org/unstable/tig pregexp:orig.tar file:tig_0.16.orig.tar.gz new: x:
