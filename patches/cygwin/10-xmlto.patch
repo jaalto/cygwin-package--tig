@@ -7,16 +7,16 @@ Subject: Do not try to use network connection to validate xml
 
 --- a/Makefile
 +++ b/Makefile
-@@ -234,10 +234,10 @@ tigmanual.7: manual.txt
+@@ -249,10 +249,10 @@ doc/tigmanual.7: doc/manual.asciidoc
  	$(ASCIIDOC) $(ASCIIDOC_FLAGS) -b docbook -d article $<
  
  % : %.xml
--	$(XMLTO) man $<
-+	$(XMLTO) --skip-validation man $<
+-	$(XMLTO) man -o doc $<
++	$(XMLTO) --skip-validation man -o doc $<
  
  %.html-chunked : %.xml
 -	$(XMLTO) html -o $@ $<
 +	$(XMLTO) --skip-validation html -o $@ $<
  
  %.pdf : %.xml
- 	$(DOCBOOK2PDF) $<
+ 	$(DOCBOOK2PDF) -o doc $<
