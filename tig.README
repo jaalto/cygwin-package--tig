@@ -11,11 +11,13 @@ Runtime requirements:
   git
   libiconv2
   libncursesw10
+  libreadline7
 
 Build requirements:
   asciidoc
   libiconv2
   libncursesw-devel
+  libreadline-devel
   quilt
   xmlto
 
@@ -48,15 +50,15 @@ Language:
 ------------------------------------
 
 Build instructions:
-  unpack tig-1.2.1-1-src.tar.bz2
+  unpack tig-2.0.2-1-src.tar.bz2
     if you use setup to install this src package, it will be
     unpacked under /usr/src automatically
   cd /usr/src
   ./tig*.sh all
 
 This will create:
-  tig-1.2.1-1.tar.xz
-  tig-1.2.1-1-src.tar.xz
+  tig-2.0.2-1.tar.xz
+  tig-2.0.2-1-src.tar.xz
 
 -------------------------------------------
 
@@ -66,6 +68,9 @@ Files included in the binary distribution:
 ------------------
 
 Port Notes:
+
+----- version 2.0.2-1 -----
+- New upstream release 2015-02-13 Jari Aalto
 
 ----- version 1.2.1-1 -----
 - New upstream release 2014-06-13 Jari Aalto
@@ -93,4 +98,4 @@ Port Notes:
 - Initial release 2007-10-18 Jari Aalto
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
-Copyright (C) 2007-2014 Jari Aalto; Licenced under GPL v2 or later
+Copyright (C) 2007-2015 Jari Aalto; Licenced under GPL v2 or later
