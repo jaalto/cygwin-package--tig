@@ -10,7 +10,7 @@ Signed-off-by: Jari Aalto <jari.aalto@cante.net>
 
 --- a/Makefile
 +++ b/Makefile
-@@ -37,7 +37,11 @@ RPM_VERLIST = $(filter-out g% dirty,$(su
+@@ -36,7 +36,11 @@ RPM_VERLIST = $(filter-out g% dirty,$(su
  RPM_VERSION = $(word 1,$(RPM_VERLIST))
  RPM_RELEASE = $(word 2,$(RPM_VERLIST))$(if $(WTDIRTY),.dirty)
  
@@ -22,4 +22,4 @@ Signed-off-by: Jari Aalto <jari.aalto@cante.net>
 +LDLIBS ?= -lcurses $(CYGWIN_LIBS)
  CFLAGS ?= -Wall -O2
  DFLAGS	= -g -DDEBUG -Werror -O0
- EXE	= src/tig
+ PROGS	= tig
