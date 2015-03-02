@@ -50,15 +50,15 @@ Language:
 ------------------------------------
 
 Build instructions:
-  unpack tig-2.0.2-1-src.tar.bz2
+  unpack tig-2.0.2-2-src.tar.bz2
     if you use setup to install this src package, it will be
     unpacked under /usr/src automatically
   cd /usr/src
   ./tig*.sh all
 
 This will create:
-  tig-2.0.2-1.tar.xz
-  tig-2.0.2-1-src.tar.xz
+  tig-2.0.2-2.tar.xz
+  tig-2.0.2-2-src.tar.xz
 
 -------------------------------------------
 
@@ -68,6 +68,11 @@ Files included in the binary distribution:
 ------------------
 
 Port Notes:
+
+----- version 2.0.2-2 -----
+- New upstream release 2015-03-02 Jari Aalto
+- Move sysconfdir from /uer/etc to /etc. Thanks to
+  Dr. Volker Zell <dr.volker.zell@oracle.com>
 
 ----- version 2.0.2-1 -----
 - New upstream release 2015-02-13 Jari Aalto

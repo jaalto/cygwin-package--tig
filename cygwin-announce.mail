@@ -1,5 +1,5 @@
 To: cygwin-announce@cygwin.com
-Subject: Updated: tig 2.0.2-1 -- Curses based git repository browser
+Subject: Updated: tig 2.0.2-2 -- Curses based git repository browser
 --text follows this line--
 
 PACKAGE DESCRIPTION
@@ -16,6 +16,7 @@ CHANGES SINCE LAST RELEASE
 ==========================
 
 See changes at https://github.com/jonas/tig
+Cygwin: Move sysconfdir from /uer/etc to /etc
 
 INSTALL OR UPGRADE NOTES
 ========================
