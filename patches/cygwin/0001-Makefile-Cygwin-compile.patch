@@ -5,11 +5,20 @@ Subject: [PATCH] Makefile: Cygwin compile
 
 Signed-off-by: Jari Aalto <jari.aalto@cante.net>
 ---
- Makefile |    6 +++++-
- 1 file changed, 5 insertions(+), 1 deletion(-)
+ Makefile |   10 +++++++---
+ 1 file changed, 7 insertions(+), 3 deletions(-)
 
 --- a/Makefile
 +++ b/Makefile
+@@ -16,7 +16,7 @@ kernel_name := $(shell sh -c 'uname -s 2
+ prefix ?= $(HOME)
+ bindir ?= $(prefix)/bin
+ datarootdir ?= $(prefix)/share
+-sysconfdir ?= $(prefix)/etc
++sysconfdir ?= /etc
+ docdir ?= $(datarootdir)/doc
+ mandir ?= $(datarootdir)/man
+ # DESTDIR=
 @@ -37,7 +37,11 @@ RPM_VERLIST = $(filter-out g% dirty,$(su
  RPM_VERSION = $(word 1,$(RPM_VERLIST))
  RPM_RELEASE = $(word 2,$(RPM_VERLIST))$(if $(WTDIRTY),.dirty)
@@ -23,3 +32,12 @@ Signed-off-by: Jari Aalto <jari.aalto@cante.net>
  CFLAGS ?= -Wall -O2
  DFLAGS	= -g -DDEBUG -Werror -O0
  EXE	= src/tig
+@@ -59,7 +63,7 @@ override CPPFLAGS += '-DTIG_VERSION="$(V
+ override CPPFLAGS += '-DSYSCONFDIR="$(sysconfdir)"'
+ 
+ ASCIIDOC ?= asciidoc
+-ASCIIDOC_FLAGS = -aversion=$(VERSION) -asysconfdir=$(sysconfdir) -f doc/asciidoc.conf
++ASCIIDOC_FLAGS = -aversion=$(VERSION) -asysconfdir=$(sysconfdir) -f doc/asciidoc.conf --unsafe
+ XMLTO ?= xmlto
+ DOCBOOK2PDF ?= docbook2pdf
+ 
