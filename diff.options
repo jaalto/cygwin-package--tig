@@ -10,3 +10,4 @@
 -x tigmanual.7
 -x tigrc.5.txt
 -x Makefile
+-x gh-490-heap-buffer-overflow-test

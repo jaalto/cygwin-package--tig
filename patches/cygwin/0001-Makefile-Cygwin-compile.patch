@@ -5,12 +5,28 @@ Subject: [PATCH] Makefile: Cygwin compile
 
 Signed-off-by: Jari Aalto <jari.aalto@cante.net>
 ---
- Makefile |   10 +++++++---
- 1 file changed, 7 insertions(+), 3 deletions(-)
+ Makefile |   11 ++++++++---
+ 1 file changed, 8 insertions(+), 3 deletions(-)
 
 --- a/Makefile
 +++ b/Makefile
-@@ -16,7 +16,7 @@ kernel_name := $(shell sh -c 'uname -s 2
+@@ -13,9 +13,14 @@ kernel_name := $(shell sh -c 'uname -s 2
+ # Include setting from the configure script
+ -include config.make
+ 
++ifeq (yes,$(shell uname -a | grep -i cygwin && echo yes))
++CYGWIN_LIBS = -liconv
++endif
++
+ # Optional defaults.
+ # TIG_ variables are set by contrib/config.make-$(kernel_name).
+-TIG_NCURSES ?= -lcurses
++TIG_NCURSES ?= -lcurses $(CYGWIN_LIBS)
++
+ LDFLAGS ?= $(TIG_LDFLAGS)
+ CPPFLAGS ?= $(TIG_CPPFLAGS)
+ LDLIBS ?= $(TIG_NCURSES) $(TIG_LDLIBS)
+@@ -24,7 +29,7 @@ CFLAGS ?= -Wall -O2 $(TIG_CFLAGS)
  prefix ?= $(HOME)
  bindir ?= $(prefix)/bin
  datarootdir ?= $(prefix)/share
@@ -19,21 +35,8 @@ Signed-off-by: Jari Aalto <jari.aalto@cante.net>
  docdir ?= $(datarootdir)/doc
  mandir ?= $(datarootdir)/man
  # DESTDIR=
-@@ -37,7 +37,11 @@ RPM_VERLIST = $(filter-out g% dirty,$(su
- RPM_VERSION = $(word 1,$(RPM_VERLIST))
- RPM_RELEASE = $(word 2,$(RPM_VERLIST))$(if $(WTDIRTY),.dirty)
- 
--LDLIBS ?= -lcurses
-+ifeq (yes,$(shell uname -a | grep -i cygwin && echo yes))
-+CYGWIN_LIBS = -liconv
-+endif
-+
-+LDLIBS ?= -lcurses $(CYGWIN_LIBS)
- CFLAGS ?= -Wall -O2
- DFLAGS	= -g -DDEBUG -Werror -O0
- EXE	= src/tig
-@@ -59,7 +63,7 @@ override CPPFLAGS += '-DTIG_VERSION="$(V
- override CPPFLAGS += '-DSYSCONFDIR="$(sysconfdir)"'
+@@ -68,7 +73,7 @@ override CPPFLAGS += '-DTIG_USER_CONFIG=
+ endif
  
  ASCIIDOC ?= asciidoc
 -ASCIIDOC_FLAGS = -aversion=$(VERSION) -asysconfdir=$(sysconfdir) -f doc/asciidoc.conf

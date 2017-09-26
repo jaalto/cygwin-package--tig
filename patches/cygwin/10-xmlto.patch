@@ -7,7 +7,7 @@ Subject: Do not try to use network connection to validate xml
 
 --- a/Makefile
 +++ b/Makefile
-@@ -297,10 +297,10 @@ doc/tigmanual.7: doc/manual.adoc
+@@ -369,10 +369,10 @@ doc/tigmanual.7: doc/manual.adoc
  	$(QUIET_ASCIIDOC)$(ASCIIDOC) $(ASCIIDOC_FLAGS) -b docbook -d article $<
  
  % : %.xml
