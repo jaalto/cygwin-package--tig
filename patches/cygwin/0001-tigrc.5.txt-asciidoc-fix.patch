@@ -19,7 +19,7 @@ Signed-off-by: Jari Aalto <jari.aalto@cante.net>
  _______________________________________________________________________
  *set*   'variable' *=* 'value'
  *bind*  'keymap' 'key' 'action'
-@@ -83,7 +83,7 @@ Set command
+@@ -87,7 +87,7 @@ Set command
  A few selective variables can be configured via the set command. The syntax
  is:
  
@@ -28,7 +28,7 @@ Signed-off-by: Jari Aalto <jari.aalto@cante.net>
  *set* variables *=* value
  
  Examples:
-@@ -488,7 +488,7 @@ Bind command
+@@ -543,7 +543,7 @@ Bind command
  Using bind commands, keys can be mapped to an action when pressed in a given
  key map. The syntax is:
  
@@ -37,7 +37,7 @@ Signed-off-by: Jari Aalto <jari.aalto@cante.net>
  *bind* 'keymap' 'key' 'action'
  
  Examples:
-@@ -832,7 +832,7 @@ terminal supports color, these commands
+@@ -919,7 +919,7 @@ terminal supports color, these commands
  background combinations to certain areas. Optionally, an attribute can be
  given as the last parameter. The syntax is:
  
