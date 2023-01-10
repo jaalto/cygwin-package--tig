@@ -7,7 +7,7 @@ Subject: Do not try to use network connection to validate xml
 
 --- a/Makefile
 +++ b/Makefile
-@@ -397,10 +397,10 @@ test/API.adoc: test/tools/libtest.sh
+@@ -445,10 +445,10 @@ test/API.adoc: test/tools/libtest.sh
  	$(QUIET_ASCIIDOC)$(ASCIIDOC) $(ASCIIDOC_FLAGS) -b docbook -d article $<
  
  % : %.xml
