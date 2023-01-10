@@ -1,0 +1,38 @@
+# 2022-12-12 in Cygwin ports mailing list
+# By Libor Ukropec <ace@seznam.cz>
+
+# package name
+NAME="tig"
+VERSION=2.5.4
+RELEASE=1
+
+# .hint generation
+CATEGORY="Utils"
+SUMMARY="Curses based git repository browser"
+DESCRIPTION="A command line repository browser capable of displaying a summarized
+revision log and showing commit log messages, diffstats and diffs. Program
+may also be used as a pager. It reads input from stdin and colorizes it."
+HOMEPAGE="https://jonas.github.io/tig/"
+LICENSE="GPL-2.0"
+
+# source and patch files
+SRC_URI="https://github.com/jonas/${NAME}/releases/download/${NAME}-${VERSION}/${NAME}-${VERSION}.tar.gz"
+REQUIRES="git libiconv2 libreadline7"
+BUILD_REQUIRES+="gcc-g++ libncurses-devel libiconv-devel asciidoc"
+
+MAKEOPTS="prefix=/usr sysconfdir=/etc"
+
+# use modified src_compile and src_install
+src_compile() {
+        warning $S
+        cd ${S}
+        lndirs
+        cd ${B}
+        ./configure --prefix=/usr
+        cygmake
+}
+
+src_install() {
+        cd ${B}
+        cyginstall install install-doc
+}
