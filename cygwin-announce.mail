@@ -5,7 +5,7 @@ Subject: Updated: tig 2.5.5-1 -- Curses based git repository browser
 PACKAGE DESCRIPTION
 ===================
 
-Homepage: http://jonas.nitro.dk/tig
+Homepage: http://jonas.github.io/tig
 License : GPL-2
 
 A command line repository browser capable of displaying a summarized
