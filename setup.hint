@@ -4,3 +4,4 @@ revision log and showing commit log messages, diffstats and diffs. Program
 may also be used as a pager. It reads input from stdin and colorizes it."
 category: Utils
 requires: git libiconv2 libncursesw10 libreadline7 libpcre1 libpcreposix0
+license: GPL-3.0-or-later

@@ -28,7 +28,7 @@ Signed-off-by: Jari Aalto <jari.aalto@cante.net>
  *set* variables *=* value
  
  Examples:
-@@ -570,7 +570,7 @@ Bind command
+@@ -575,7 +575,7 @@ Bind command
  Using bind commands, keys can be mapped to an action when pressed in a given
  key map. The syntax is:
  
@@ -37,7 +37,7 @@ Signed-off-by: Jari Aalto <jari.aalto@cante.net>
  *bind* 'keymap' 'key' 'action'
  
  Examples:
-@@ -958,7 +958,7 @@ terminal supports color, these commands
+@@ -963,7 +963,7 @@ terminal supports color, these commands
  background combinations to certain areas. Optionally, an attribute can be
  given as the last parameter. The syntax is:
  
